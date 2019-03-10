@@ -1,0 +1,89 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fbe1ca;
+/*   overflow-y: hidden; */
+  font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
+  color: #182249;
+}
+
+/* if certain width, activate overflow-y:scroll */
+
+.header {
+  height: 30vh;
+  width: 100%;
+/*   background-color: yellow; */
+}
+
+.navbar {
+  height: 30%;
+  width: 100%;
+  background-color: #182249;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+/*   background-color: black; */
+}
+
+#colonial {
+  display: flex;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+/*   background-color: lightgray; */
+}
+
+.colonial-image {
+  width: 400px;
+  height: 100%;
+  text-align: center;
+/*   background-color: blue; */
+}
+
+.image-container {
+  /* both divided by 1.8 */
+  height: 373px; /* 7 in or 672 px */
+  width: 245px; /* 4.6 in or 432 px */
+  background-color: white;
+  border: 2px solid black;
+  margin: auto 0;
+}
+
+.colonial-text {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0 60px;
+  
+}
+
+.colonial-text p {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.colonial-text h2 {
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  font-size: 36px;
+}
+
+.arrow {
+  height: 100%;
+  min-width: 40px;
+  margin: 0;
+  padding: 0;
+/*   background-color: white; */
+}
