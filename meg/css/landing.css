@@ -1,0 +1,111 @@
+@font-face{
+font-family: Barabara; 
+  src: url('fonts/BARABARA.otf'); 
+}
+@font-face{
+font-family: Source;
+  src: url('fonts/SourceSerifPro-Regular.ttf');
+}
+
+@font-face{
+font-family: Source;
+  font-weight:bold;
+  src: url('fonts/SourceSerifPro-Bold.ttf');
+}
+
+body {
+  margin: 0;
+  background-color: #fbe1ca;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  color: #182249;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #182249;
+  padding: 0.6em;
+  font-family: Source;
+  font-weight: bold;
+}
+.navbar ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.navbar li{
+  display: inline-block;
+  margin: 2em;
+}
+
+.navbar a:hover {
+  background-color: #ee8ca0;
+  color: #182249;
+  border-radius: 9px;
+}
+
+.navbar a:active {
+  background-color: #23879f;
+  color: #fff;
+  border-radius: 9px;
+}
+
+.title {
+  text-align:center;
+  font-family: Barabara;
+  font-weight: lighter;
+  font-stretch: expanded;
+}
+.title h1{
+  color: #182249;
+  font-size: 3em;
+  margin:0;
+  padding: 15vh 0 3vh 0;
+}
+/*
+.title h1:hover{
+    text-shadow: 1px 0px 20px #23879f;
+}*/
+
+.title p{
+  color: #722730;
+  margin: 0;
+  font-family: Source;
+}
+.button {
+  margin: 7em 0 0 0;
+  color: #182249;
+  font-family: Source;
+  font-weight: bold;
+}
+
+.button a{
+  text-decoration: none;
+  background-color: #f2b370;
+  padding: 0.6em;
+  color: #122f6d;
+  border-radius: 9px
+}
+.button ul{
+  list-style: none;
+  text-align: center;
+  padding:0;
+}
+
+.button li{
+  display: inline-block;
+  margin: 9.5vh; 
+}
+.button a:hover {
+  background-color: #ee8ca0;
+}
+
+.button a:active {
+  background-color: #23879f;
+  color: #fff;
+}
