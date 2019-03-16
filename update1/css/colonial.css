@@ -1,3 +1,16 @@
+.timeline {
+  height: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.timeline a {
+  margin: 0 1.5em;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -5,7 +18,7 @@
   margin: 0;
   height: 100%;
   width: 100%;
-/*   background-color: black; */
+/*  background-color: black; */
 }
 
 #colonial {
@@ -13,7 +26,12 @@
   margin: 0;
   height: 100%;
   width: 100%;
-/*   background-color: lightgray; */
+  padding: 0 10px;
+/*  background-color: lightgray; */
+}
+
+#colonial h1 {
+  margin: 0;
 }
 
 .colonial-image {
@@ -29,21 +47,22 @@
   width: 245px; /* 4.6 in or 432 px */
   background-color: white;
   border: 2px solid black;
-  margin: auto 0;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .colonial-text {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0 60px;
+  padding: 0 30px;
   
 }
 
-.colonial-text p {
+/*.colonial-text p {
   text-indent: 2em;
   text-align: justify;
-}
+}*/
 
 .colonial-text h2 {
   margin-top: 0;
@@ -53,8 +72,26 @@
 
 .arrow {
   height: 100%;
-  min-width: 40px;
+  width: 200px;
   margin: 0;
   padding: 0;
-/*   background-color: white; */
+  text-align: center;
+/*  align-self: center;*/
+  font-size: 4em;
+  cursor: pointer;
+  color: #f69e36;
+/*  background-color: white; */
+}
+
+.arrow i{
+  top: 30vh;
+  position: relative;
+}
+
+.arrow:hover {
+  color: #ee8ca0;
+}
+
+.arrow:active {
+  color: #23879f;
 }
