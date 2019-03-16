@@ -1,0 +1,24 @@
+#page{
+  padding-left: 100px;
+  padding-top: 20px;
+  width: 1200px;
+}
+.image{
+  width: 400px;
+  height: 300px;
+  float: left;
+  }
+.description{
+  width: 700px;
+  height: 300px;
+  float: right;
+}
+.description h1{
+  font-size: 40px; 
+  padding-top: 0 px; 
+  color: #182249;
+}
+
+
+
+  

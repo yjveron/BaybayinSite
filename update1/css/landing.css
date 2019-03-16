@@ -1,63 +1,37 @@
-@font-face{
-font-family: Barabara; 
-  src: url('fonts/BARABARA.otf'); 
-}
-@font-face{
-font-family: Source;
-  src: url('fonts/SourceSerifPro-Regular.ttf');
-}
-
-@font-face{
-font-family: Source;
-  font-weight:bold;
-  src: url('fonts/SourceSerifPro-Bold.ttf');
-}
-
-body {
-  margin: 0;
-  background-color: #f8e7db;
-  width: 100%;
-  height: 100%;
-}
-
 .navbar {
   color: #182249;
-  font-size: 1em;
   font-weight: bold;
+
+  /*Unset removes the css that was set by style.css*/
+  background-color: unset;
+  display: unset;
+  margin-left: unset;
+  height: unset;
 }
 
 .navbar a {
   text-decoration: none;
   color: #182249;
   padding: 0.6em;
-  font-family: Source;
   font-weight: bold;
 }
 .navbar ul{
-  list-style: none;
   text-align: center;
-  padding: 0;
 }
 .navbar li{
-  display: inline-block;
   margin: 2em;
 }
 
 .navbar a:hover {
-  background-color: #ee8ca0;
-  color: #182249;
   border-radius: 9px;
 }
 
 .navbar a:active {
-  background-color: #23879f;
-  color: #fff;
   border-radius: 9px;
 }
 
 .title {
   text-align:center;
-  font-family: Barabara;
   font-weight: lighter;
   font-stretch: expanded;
 }
@@ -75,12 +49,10 @@ body {
 .title p{
   color: #722730;
   margin: 0;
-  font-family: Source;
 }
 .button {
   margin: 7em 0 0 0;
   color: #182249;
-  font-family: Source;
   font-weight: bold;
 }
 

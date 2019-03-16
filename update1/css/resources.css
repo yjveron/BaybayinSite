@@ -1,79 +1,7 @@
-@font-face{
-font-family: Barabara; 
-  font-weight: lighter;
-  src: url('fonts/BARABARA.otf'); 
-}
-@font-face{
-font-family: Source;
-  src: url('fonts/SourceSerifPro-Regular.ttf');
-}
-
-@font-face{
-font-family: Source;
-  font-weight:bold;
-  src: url('fonts/SourceSerifPro-Bold.ttf');
-}
-body {
-  margin: 0;
-  background-color: #fbe1ca;
-  width: 100%;
-  height: 100%;
-}
-
-.header h1{
-  float: right;
-  margin: 1em 3em 0.5em 0;
-  color: #fff;
-  font-size: 1em;
-  font-family: 'Barabara';
-}
-
-.header h1:hover{
-  text-shadow: 1px 0px 20px white;
-}
-
-.navbar {
-  background-color: #182249;
-  font-size: 1em;
-}
-
-.navbar a {
-  text-decoration: none;
-  font-family: Source;
-  color: #fff;
-  padding: 0.6em 2em 0.6em 2em;
-}
-.navbar ul{
-  list-style: none;
-  margin:0;
-  padding:0;
-  margin-left: 3em;
-}
-.navbar li{
-  display: inline-block;
-  margin: 1em;
-}
-
-.navbar a:hover {
-  background-color: #ee8ca0;
-  color: #182249;
-  border-radius: 1em;
-}
-
-.navbar a:active {
-  background-color: #23879f;
-  color: #fff;
-  border-radius: 1em;
-}
-
 .main {
   margin: 4em 4em 3em 9em;
-  color: #182249;
 }
 
-.main h1{
-  font-family: 'Barabara';
-}
 .main p{
   margin: 4em 15em 5em 3.5em;
   text-align: justify;
