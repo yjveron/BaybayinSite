@@ -1,3 +1,12 @@
+body{
+    height: 100%;
+    width: 100%;
+    background: url(../images/L_BANNER.png);
+    background-size: 100% 117%;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
   color: #182249;
   font-weight: bold;
@@ -71,7 +80,8 @@
 
 .button li{
   display: inline-block;
-  margin: 9.5vh; 
+  margin: 9.5vh;
+
 }
 .button a:hover {
   background-color: #ee8ca0;
