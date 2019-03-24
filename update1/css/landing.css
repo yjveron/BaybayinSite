@@ -1,16 +1,16 @@
 body{
     height: 100%;
     width: 100%;
-    background: url(../images/L_BANNER.png);
-    background-size: 100% 117%;
-    margin: 0;
-    padding: 0;
+    background: url(../images/L_BANNER.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .navbar {
   color: #182249;
   font-weight: bold;
-
   /*Unset removes the css that was set by style.css*/
   background-color: unset;
   display: unset;
