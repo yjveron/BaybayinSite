@@ -1,7 +1,11 @@
 /* GENERAL */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face{
-font-family: Barabara; 
+  font-family: Barabara; 
   src: url('fonts/BARABARA.otf'); 
 }
 @font-face{
@@ -18,8 +22,6 @@ font-family: Source;
 body {
   margin: 0;
   background-color: #f8e7db;
-  width: 100%;
-  height: 100%;
   font-family: 'Source';
   color: #182249;
   overflow-y: scroll;

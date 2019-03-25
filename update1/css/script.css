@@ -1,4 +1,5 @@
 
+
 h1{
   padding: 10px;
 }
@@ -6,6 +7,8 @@ body {
   background-color: #fbe1ca;
   color: #722730;
   font-family:Calibri;
+  width: 100%;
+  height: 100%;
 }
 p a{
   color: white; 
@@ -35,13 +38,13 @@ p a:hover {
   margin-top: 30px;
 }
 
-#consonants{
+#header{
   padding-left: 70px;
   font-size: 17px;
   color: #182249;
 }
 
-#consonants h1{
+#header h1{
   padding: 10px;
 }
 
@@ -106,6 +109,74 @@ p a:hover {
   padding-left: 180px;
   padding-right: 180px;
   padding-top: 20px;
+}
+
+.sidescroll{
+  width: 160px;
+  height: 500px;
+  position: fixed;
+  z-index: 1;
+  top: 20vh;
+  left: 85%;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidescroll a:link {
+  text-decoration: none;
+  color: #c64049;
+}
+
+.sidescroll a:visited {
+  color: #c64049;
+}
+
+.circle{
+  position: relative;
+  top: 25%;
+  border-radius: 50%;
+  margin: 0 0;
+  height: 14px;
+  width: 14px;
+  z-index: 1;
+  background-color: #fbe1ca;
+}
+
+.circle-past {
+  background-color: #c64049;
+  border: 3px solid #c64049;
+  margin: 2px;
+}
+
+.circle-active {
+  background-color: #c64049;
+  border: 3px solid #fbe1ca;
+  box-shadow: 0 0 0 2px #c64049; 
+  color: #1b8ba1;
+  margin: 2px;
+}
+
+.circle-future {
+  border: 3px solid #fbe1ca;
+  box-shadow: 0 0 0 2px #c64049; 
+  margin: 2px;
+}
+
+.circle p{
+  margin-left: 2em;
+}
+
+.line {
+  height: 100px;
+  border-left: 2px dotted #e99a3d;
+  position: relative;
+  z-index: 0;
+  left: 11px;
+}
+
+.line-inactive {
+  border-top: 3px dotted #e99a3d;
 }
   
   
