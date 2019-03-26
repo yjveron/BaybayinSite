@@ -94,6 +94,7 @@
   border-top: 3px dotted #e99a3d;
   position: relative;
   margin-top: 54px;
+  margin-left: -2px;
 }
 
 .line-inactive {
