@@ -84,11 +84,11 @@
   height: 100%;
   width: 100%;
   padding: 0 10px;
-  background-color: lightgray; 
+/*  background-color: lightgray; */
 }
 
 /*DISC BUT SPECIFICALLY FOR COLUMN*/
-.th-2 {
+.row {
   flex-direction: column;
 }
 
@@ -107,13 +107,20 @@
 /*   background-color: blue; */
 }
 
+.col .image-column & .th-1 .image-column {
+  width: 400px;
+}
+
 .image-row {
-  background-color: blue;
+/*  background-color: blue;*/
   padding: 0 0 0 50px;
 
 }
-.col .image-column & .th-1 .image-column {
-  width: 400px;
+
+#artefact-2 .image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .image-container {
@@ -134,9 +141,14 @@
   width: 320px; /* 6 in or 576 px */
 }
 
-.th-2 .image-container {
+#theories-2 .image-container {
   /*figured out*/
   height: 340px;
+}
+
+#artefact-2 .image-container {
+  height: 320px;
+  width: 320px;
 }
 
 .img {
@@ -156,14 +168,14 @@
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: white;
+/*  background-color: white;*/
 }
 
 .th-1 .text{
   padding: 0 70px 0 30px;
 }
 
-.th-2 .text p{
+.row .text p{
   padding: 0 60px;
 }
 
