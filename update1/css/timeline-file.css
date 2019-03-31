@@ -55,7 +55,6 @@
 
 .line {
   width: 100px;
-  border-top: 3px dotted #e99a3d;
   position: relative;
   margin-top: 54px;
   margin-left: -2px;
@@ -63,4 +62,8 @@
 
 .line-inactive {
   border-top: 3px dotted #e99a3d;
+}
+
+.line-active {
+  border-top: 3px solid #e99a3d;
 }
