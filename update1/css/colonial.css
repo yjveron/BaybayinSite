@@ -76,7 +76,8 @@
 /*  background-color: black; */
 }
 
-#colonial {
+/*#colonial-1*/
+.disc {
   display: flex;
   margin: 0;
   height: 100%;
@@ -85,7 +86,8 @@
 /*  background-color: lightgray; */
 }
 
-#colonial h1 {
+/*#colonial-1*/
+.disc h1 {
   margin: 0;
 }
 
@@ -93,6 +95,7 @@
   width: 400px;
   height: 100%;
   text-align: center;
+  display: flex;
 /*   background-color: blue; */
 }
 
@@ -100,10 +103,13 @@
   /* both divided by 1.8 */
   height: 373px; /* 7 in or 672 px */
   width: 245px; /* 4.6 in or 432 px */
-  background-color: white;
-  border: 2px solid black;
-  margin: 0 auto;
-  align-items: center;
+/*  border: 2px solid black;*/
+  display: flex;
+}
+
+.img {
+  object-fit: contain;
+  width: 100%;
 }
 
 .colonial-text {

@@ -9,6 +9,11 @@ var line3 = document.getElementById("line-3");
 
 var colonial1 = document.getElementById("colonial-1");
 
+// function ifVisible(partID) {
+//   var isVisible = partID.style.display == "flex";
+//   return true;
+// }
+
 function precolonial() {
   circle1.className = "circle circle-active";
   circle2.className = "circle circle-future";
@@ -27,8 +32,6 @@ function colonial() {
   line1.className = "line line-active";
   line2.className = "line line-inactive";
   line3.className = "line line-inactive";
-
-
 }
 
 function artifacts() {
