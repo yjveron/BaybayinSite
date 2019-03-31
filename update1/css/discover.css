@@ -79,32 +79,64 @@
 /*#colonial-1*/
 .disc {
   display: flex;
+  flex-direction: row;
   margin: 0;
   height: 100%;
   width: 100%;
   padding: 0 10px;
-/*  background-color: lightgray; */
+  background-color: lightgray; 
+}
+
+/*DISC BUT SPECIFICALLY FOR COLUMN*/
+.th-2 {
+  flex-direction: column;
 }
 
 /*#colonial-1*/
 .disc h1 {
   margin: 0;
+  text-transform: uppercase;
 }
 
-.colonial-image {
-  width: 400px;
-  height: 100%;
+/* IMAGE */
+
+.image-column {
   text-align: center;
   display: flex;
+  height: 100%;
 /*   background-color: blue; */
 }
 
+.image-row {
+  background-color: blue;
+  padding: 0 0 0 50px;
+
+}
+.col .image-column & .th-1 .image-column {
+  width: 400px;
+}
+
 .image-container {
+/*    border: 2px solid black;*/
+  display: flex;
+  align-content: center;
+}
+
+.col .image-container {
   /* both divided by 1.8 */
   height: 373px; /* 7 in or 672 px */
   width: 245px; /* 4.6 in or 432 px */
-/*  border: 2px solid black;*/
-  display: flex;
+} 
+
+.th-1 .image-container {
+  /* both divided by 1.8 */
+  height: 384px; /* 7.2 in or 691.2 px */
+  width: 320px; /* 6 in or 576 px */
+}
+
+.th-2 .image-container {
+  /*figured out*/
+  height: 340px;
 }
 
 .img {
@@ -112,24 +144,46 @@
   width: 100%;
 }
 
-.colonial-text {
+.img-th2 {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+/* TEXT */
+
+.text {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0 30px;
-  
+  background-color: white;
 }
 
-/*.colonial-text p {
-  text-indent: 2em;
-  text-align: justify;
-}*/
+.th-1 .text{
+  padding: 0 70px 0 30px;
+}
 
-.colonial-text h2 {
+.th-2 .text p{
+  padding: 0 60px;
+}
+
+.col .text{
+  padding: 0 30px;
+}
+
+
+.text h2 {
   margin-top: 0;
   margin-bottom: 1.2em;
-  font-size: 36px;
+  font-size: 40px;
 }
+
+.text .maroon {
+  font-size: 30px;
+  color: #722730;
+}
+
+/*ARROWS*/
 
 .arrow {
   height: 100%;
