@@ -38,15 +38,22 @@ h1 {
   font-size: 2em;
 }
 
+h2{
+  font-family: 'Shrikhand';
+}
+
+h3 {
+  font-family: 'Barabara';
+}
+
 /* NAVBAR */
-.navbar h1{
-  padding-top: 0.3em;
+.navbar h3{
   color: #fff;
   font-size: 1em;
   margin-right: 3.6em;
 }
 
-.navbar h1:hover{
+.navbar h3:hover{
   text-shadow: 1px 0px 20px white;
 }
 
