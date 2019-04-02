@@ -16,9 +16,11 @@ var art2 = document.getElementById("artifacts-2");
 var theo1 = document.getElementById("theories-1");
 var theo2 = document.getElementById("theories-2");
 
+var leftarrow = document.getElementById("l-arrow");
+var rightarrow = document.getElementById("r-arrow");
+
 var parts = [precol1, precol2, col1, col2, art1, art2, theo1, theo2]; 
 
-// TO BE CHANGED EVENTUALYL
 var visible = 1;
 
 // https://stackoverflow.com/questions/195951/how-to-change-an-elements-class-with-javascript
@@ -40,7 +42,8 @@ function precolonial1() {
     }
   }
 
-    visible = 0;
+  leftarrow.className = "arrow arrow-inactive arrow-left";
+  visible = 0;
 }
 
 function colonial1() {
@@ -100,12 +103,13 @@ function theories1() {
     }
   }
 
+  rightarrow.className = "arrow arrow-inactive arrow-right";
+  visible = 0;
   visible = 6;
 }
 
 function checkVisible() {
   for (i = 0; i < parts.length ; i++){
-    // console.log(parts[i].className);
     if ((parts[i].className === "disc col") || (parts[i].className === "disc row") || (parts[i].className === "disc th-1")) {
       console.log(parts[i].className);
       visible = i;
@@ -123,6 +127,9 @@ function left() {
   checkVisible();
   switch (visible) {
     case 1:
+        precolonial1();
+        leftarrow.className = "arrow arrow-inactive arrow-right";
+        break;
     case 3:
     case 5:
         parts[visible].className = "hidden";
@@ -146,14 +153,15 @@ function left() {
         break;
     case 7:
         theories1();
+        rightarrow.className = "arrow arrow-right";
         break;
     default:
         console.log("default");
   }
 }
 
-
 function right(){
+  // PSEUDOCODE
   // check which one is visible (Based on class)
     // loop through all of the classes and return the visible class
     // if th1 = visible, clicking right will disable the right button
@@ -172,6 +180,10 @@ function right(){
   checkVisible();
   switch (visible) {
     case 0:
+        parts[visible].className = "hidden";
+        parts[visible+1].className = "disc col";
+        leftarrow.className = "arrow arrow-left";
+        break;
     case 1:
     case 2:
     case 3:
@@ -191,65 +203,20 @@ function right(){
     case 6:
         parts[visible].className = "hidden";
         parts[visible+1].className = "disc row";
+        rightarrow.className = "arrow arrow-inactive arrow-right";
         break;
     default:
         console.log("default");
   }
-
-
-    // if (visible === (4 || 6)) {
-    //   parts[visible].className = "hidden";
-    //   parts[visible+1].className = "disc row";
-
-    //   if (visible === 6) {
-    //       theories();
-    //   }
-
-    //   //disable right button after making 7th div visible
-    //   //https://www.webdesignerforum.co.uk/topic/44218-remove-onclick-event-with-javascript/
-    // }
-    // else {
-    //   if (visible === 1) {
-    //     colonial1();
-    //   }
-    //   else if (visible === 3) {
-    //     artifacts1();
-    //   }
-    //   else if (visible === 5) {
-    //       parts[visible].className = "hidden";
-    //       parts[visible+1].className = "disc th-1";
-    //   }
-    //   else {
-    //       parts[visible].className = "hidden";
-    //       parts[visible+1].className = "disc col";
-    //   }
-    // }
-    // else {
-    //   if (visible === 5) {
-    //     // next class will be disc th-1
-    //   }
-    //   else {
-    //     parts[visible].className = "hidden";
-    //     parts[visible+1].className = "disc col";
-    //   }
-    // }
-    //   parts[visible].className = "hidden";
-    //   parts[visible+1].className = "disc col";
-
-    //   if (visible === 2) {
-    //       colonial1();
-    //   }
-    //   else if (visible === 4) {
-    //       artifacts1();
-    //   }
-    //   else if (visible === 6) {
-    //       theories();
-    //   }
-    //   else {
-    //   }
 }
 
-
-// IF visible = 1, trigger colonial1();
-
-
+document.onkeydown = function(e) {
+  switch (e.key) {
+    case 'ArrowLeft':
+        left();
+        break;
+    case 'ArrowRight':
+        right();
+        break;
+  }
+}
