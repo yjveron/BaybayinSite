@@ -5,6 +5,8 @@
 
 .timeline a {
   margin-top: 45px;
+  cursor: pointer;
+  color: #c64049;
 }
 
 .timeline a:link {

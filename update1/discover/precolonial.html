@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ID Thesis - Colonial Period</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/fontawesome-free-5.8.1-web/css/all.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" href="../css/discover.css">
   <link rel="stylesheet" href="../css/timeline-file.css">
@@ -22,22 +22,22 @@
     <h3>BAYBAYIN NATIN</h3>
   </div>
   <div class="timeline">
-    <a href="#precolonial" onclick="precolonial();">
+    <a onclick="precolonial1();">
       <div class = "circle circle-active" id = "circle-1">
           <p>Pre-colonial</p>
       </div></a>
         <div class = "line line-inactive" id = "line-1"></div>
-    <a href="#colonial" onclick="colonial();">
+    <a onclick="colonial1();">
           <div class = "circle circle-future" id = "circle-2">
             <p>Colonial</p>
           </div></a>
         <div class = "line line-inactive" id = "line-2"></div>
-    <a href="#artifacts" onclick="artifacts();">
+    <a onclick="artifacts1();">
           <div class = "circle circle-future" id = "circle-3">
             <p>Artifacts</p>
           </div></a>
         <div class = "line line-inactive" id = "line-3"></div>
-    <a href="#theories" onclick="theories();">
+    <a onclick="theories1();">
             <div class = "circle circle-future" id = "circle-4">
               <p>Theories</p>
             </div></a>
@@ -47,7 +47,7 @@
   <div class="arrow arrow-left">
     <i class="fas fa-caret-left"></i>
   </div>
-  <div id="precolonial-1" class="disc col" style="display:none;">
+  <div id="precolonial-1" class="disc col">
     <div class="image-column">
       <div class="image-container">
         <img class="img" src="../images/DISCOVER/PRECOL/precol1.png">
@@ -60,7 +60,7 @@
         <p>Unlike the Roman Alphabet which has 5 vowels, Baybayin only has three, mainly A, E/I, and O/U. E/I and O/U share the same character. Baybayin also only has 14 consonants as compared to the 21 of the Roman Alphabet. These are BA, KA, DA/RA, GA, HA, LA, MA, NA, NGA, PA, SA, TA, WA, and YA.</p>
     </div>
   </div>
-  <div id="precolonial-2" class="disc col">
+  <div id="precolonial-2" class="hidden">
     <div class="image-column">
       <div class="image-container">
         <img class="img" src="../images/DISCOVER/PRECOL/precol2.png">
@@ -73,8 +73,90 @@
         <p>According to the Boxer Codex of 1590, Baybayin is known by everyone regardless of class. This connotes that most early Tagalogs were literate and had a literary tradition. Unfortunately, most, if not all, were erased from our collective memory by the Spanish colonizers who forced onto Filipinos their own culture while demonizing our very own.</p>
     </div>
   </div>
+  <div id="colonial-1" class="hidden">
+    <div class="image-column">
+      <div class="image-container">
+        <img class="img" src="../images/DISCOVER/COL/col1.png">
+      </div>
+    </div>
+    <div class="text">
+        <h1>Colonial Period</h1>
+        <p>Because the Spanish colonizers could not understand Baybayin, it was just a matter of time before they introduced their own system --- the Roman Alphabet. Unfortunately, this meant banning all pre-Hispanic forms of writing including Baybayin. This led to a drastic decline in Tagalog script, especially for Filipinos who lived in lowland areas. Early Filipinos who live in easy-to-reach areas had their culture eradicated more quickly than those who lived in remote villages and hard-to-reach areas.</p>
+        <p>Mindanao and Palawan, for example, were able to preserve most of their ancient culture, including their scripts and system of writing, because the Spanish colonizers were not able to oppress them as much. Any culture that was foreign to the Spanish were banned. Hundreds of written accounts narrate a regular burning of pre-Hispanic scripts by Spanish friars as they believe they contain evil incantations and curses which could hurt the Friars’ beliefs.</p>
+    </div>
+  </div>
+  <div id="colonial-2" class="hidden">
+    <div class="text">
+        <h1>Colonial Period</h1>
+        <p>Ironically, the system of writing which they were afraid of was also the same system of writing that they used to spread Christianity. Spanish Friars managed to convince the natives to convert to Christianity by using Baybayin as their medium of translation. To make up for the language difference, Baybayin had to be tweaked to translate Spanish words. This reformation of Baybayin came when Fr. Francisco Lopez published an Ilokano Doctrina. One new rule that he introduced to the system of writing was to place a cross mark below the Baybayin characters to cancel the vowel. An example of this could be found in Doctrina Christiana that is still preserved until today.</p>
+        <p>On a funny turn of fate, what helped the Spanish colonize us faster also brought its end. Baybayin was used as a uniting force by Andres Bonifacio in 1892. It symbolized the Filipinos’ unity against their oppressors which could be translated to nationalism. Perhaps, the best example of this could be the Katipunan flag of the Magdiwang faction showcased the Baybayin character KA during the Spanish revolution. </p>
+        <p>Andres Bonifacio mentions in his poem Ang Dapat Mabatid ng mga Tagalog that the early Tagalogs used to live in prosperity before the Spaniards came. Education was for everyone and everyone was literate with their own native writing systems, including women and children, a dire contrast from the Spanish times.</p>
+    </div>
+    <div class="image-column">
+      <div class="image-container">
+        <img class="img" src="../images/DISCOVER/COL/col2.png">
+      </div>
+    </div>
+  </div>
+  <div id="artifacts-1" class="hidden">
+    <div class="image-column">
+      <div class="image-container">
+        <img class="img" src="../images/DISCOVER/ART/art4.png">
+      </div>
+    </div>
+    <div class="text">
+        <h1>Artifacts Found</h1>
+        <p>Unfortunately, there is not much existing evidence of Baybayin today. Fortunately, what very little evidence we find were carefully preserved. One such evidence was found along the Lake of Laguna on January 1990. This would, later on, be sold to the National Museum by the Laguna Copperplate Inscription (LCI).</p>
+        <p>Antoon Postma, the founder of the Laguna Copperplate Inscription, posited that the artefacts discovered and preserved have a strong resemblance to artefacts from Indonesia. He noted that the inscriptions on the artefact were records of debts. To add to this, the system of writing resembled an early form of the Kawi Script which originated from Indonesia.</p>
+        <p>The Kawi Script was not only used in Java but also in Southeast Asian mainland with little to no variations. The implication of this is that the inscription found in the LCI could have been originated from Central Java since the language used in the inscription is a mixture of Sanskrit words, Old Javanese, and Old-Malay that contains similar words used in Old-Tagalog language  such as ngaran or name and pamgat (pamagat) or title in Tagalog. This signifies that our ancestors had prolonged relations with neighbouring countries.</p>
+    </div>
+  </div>
+  <!-- ARTIFACTS 2 IS DISC ROW -->
+  <div id="artifacts-2" class="hidden">
+    <div class="text">
+        <h2>Artifacts Found</h2>
+        <p>One can only wish to know what really happened in the past. Without more historical evidence, there is no way to know how Baybayin, a system of writing that resembled the Kawi script, became the system of writing of the early Tagalogs.</p>
+        <p>There are only a handful of written accounts preserved until today which documented Tagalog or any Philippine dialect for that matter. One of these, and the only existing today, is the Doctrina Christiana. It is a compilation of prayers, the Ten Commandments, catechism, etc about the Catholic Church. The book consisted of Spanish writing alongside its Tagalog translations. The Spanish texts were printed in Gothic letters while Tagalog were printed in Baybayin. Early Tagalogs also used Baybayin before as signatures, as evidenced by existing legal documents today. Notarial documents would also contain Baybayin inscriptions.</p>
+    </div>
+    <div class="image-row">
+      <div class="image-container">
+        <img class="img" src="../images/DISCOVER/ART/art1.png">
+      </div>
+      <div class="image-container">
+        <img class="img-th2" src="../images/DISCOVER/ART/art2.png">
+      </div>
+      <div class="image-container">
+        <img class="img-th2" src="../images/DISCOVER/ART/art3.png">
+      </div>
+    </div>
+  </div>
+  <!-- THEORIES 1 IS DISC TH-1 -->
+  <div id="theories-1" class="hidden">
+    <div class="text">
+      <h1>Theories and Modern Usage</h1>
+      <p>Because of the limited historical resources discussing Baybayin, the mystery on its origin and meaning continues to be a mystery until today. However, this does not stop historians from offering their theories. One such theory was presented by Bonifacio Comandante in his PhD dissertation. He claimed that giants clams played a big role in the development of the native script. Comandante drew this theory due to Baybayin characters sharing some resemblance to the shape of giant clams.</p>
+      <p>Baybayin was also believed to be the “Bathala Code.” It was said that Bathala, the name of the Tagalog Supreme Sky god, was spelt in Baybayin, it was also a representation of a man, woman, and an entity which was the breath of life. The BA character was said to represent the female genitalia. The LA character, on the other hand, showcased a phallic symbol, believed to represent the male genitalia. Both characters are also the starting syllables for their Tagalog translations: BAbae and LAlake. In the middle of these two characters is the HA symbol which represented the divine breath as the character symbolizes wind. The Tagalog counterpart of wind also starts with the syllable HA (HAngin).</p>
+    </div>
+    <div class="image-column">
+      <div class="image-container">
+        <img class="img" src="../images/DISCOVER/TH/th1.png">
+      </div>
+    </div>
+  </div>
+  <!-- THEORIES 2 IS DISC ROW -->
+  <div id="theories-2" class="hidden">
+    <div class="text">
+      <h2>Filipino Identity</h2>
+      <p>Baybayin is being used right now to reclaim the so-called lost Filipino identity in an attempt to reconnect with their roots. This movement also signifies an innate need for a native culture that is inherently Filipino. Baybayin could be used to promote cultural awareness not just only for Baybayin alone but for all native cultural traditions that are disappearing with the turn of the times. Although Baybayin is not used on a day to day basis, it could be seen as inscriptions for Graphic Design, Decorations, Calligraphy, Tattoos, etc.</p>
+    </div>
+    <div class="image-row">
+      <div class="image-container">
+        <img class="img-th2" src="../images/DISCOVER/TH/th2.png">
+      </div>
+    </div>
+  </div>
   <div class="arrow arrow-right">
-    <i class="fas fa-caret-right"></i>
+    <i class="fas fa-caret-right" onclick="right();"></i>
   </div>
 </div>
   

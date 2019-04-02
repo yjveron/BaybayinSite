@@ -87,6 +87,10 @@
 /*  background-color: lightgray; */
 }
 
+.hidden {
+  display: none;
+}
+
 /*DISC BUT SPECIFICALLY FOR COLUMN*/
 .row {
   flex-direction: column;
