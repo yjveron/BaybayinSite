@@ -18,11 +18,8 @@ var theo2 = document.getElementById("theories-2");
 
 var parts = [precol1, precol2, col1, col2, art1, art2, theo1, theo2]; 
 
-
-// function ifVisible(partID) {
-//   var isVisible = partID.style.display == "flex";
-//   return true;
-// }
+// TO BE CHANGED EVENTUALYL
+var visible = 1;
 
 // https://stackoverflow.com/questions/195951/how-to-change-an-elements-class-with-javascript
 
@@ -35,12 +32,15 @@ function precolonial1() {
   line2.className = "line line-inactive";
   line3.className = "line line-inactive";
 
+// MAKE OTHER PARTS HIDDEN
   for (i = 0; i < parts.length ; i++){
     parts[i].className = "hidden";
     if (i === 0) {
       parts[i].className = "disc col";
     }
   }
+
+    visible = 0;
 }
 
 function colonial1() {
@@ -52,12 +52,15 @@ function colonial1() {
   line2.className = "line line-inactive";
   line3.className = "line line-inactive";
 
+// MAKE OTHER PARTS HIDDEN
   for (i = 0; i < parts.length ; i++){
     parts[i].className = "hidden";
     if (i === 2) {
       parts[i].className = "disc col";
     }
   }
+
+  visible = 2;
 }
 
 function artifacts1() {
@@ -69,12 +72,15 @@ function artifacts1() {
   line2.className = "line line-active";
   line3.className = "line line-inactive";
 
+// MAKE OTHER PARTS HIDDEN
   for (i = 0; i < parts.length ; i++){
     parts[i].className = "hidden";
     if (i === 4) {
       parts[i].className = "disc col";
     }
   }
+
+  visible = 4;
 }
 
 function theories1() {
@@ -86,21 +92,164 @@ function theories1() {
   line2.className = "line line-active";
   line3.className = "line line-active";
 
+// MAKE OTHER PARTS HIDDEN
   for (i = 0; i < parts.length ; i++){
     parts[i].className = "hidden";
     if (i === 6) {
       parts[i].className = "disc th-1";
     }
   }
+
+  visible = 6;
 }
 
 function checkVisible() {
-  if (styleCheck === "flex") {
-      return false; 
-      
+  for (i = 0; i < parts.length ; i++){
+    // console.log(parts[i].className);
+    if ((parts[i].className === "disc col") || (parts[i].className === "disc row") || (parts[i].className === "disc th-1")) {
+      console.log(parts[i].className);
+      visible = i;
+      console.log("visible: " + visible);
+    }
+    else {
+      console.log("hidden");
+    }
   }
 }
 
-function right(){
+function left() {
+  console.log("left clicked");
 
+  checkVisible();
+  switch (visible) {
+    case 1:
+    case 3:
+    case 5:
+        parts[visible].className = "hidden";
+        parts[visible-1].className = "disc col";
+        break;
+    case 2:
+        precolonial1();
+        parts[visible].className = "hidden";
+        parts[visible+1].className = "disc col";
+        break;
+    case 4:
+        colonial1();
+        parts[visible].className = "hidden";
+        parts[visible+1].className = "disc col";
+        break;
+    case 6:
+        artifacts1();
+        // FROM ARTIFACTS 1, ADD 1 TO GO TO ARTIFACTS 2
+        parts[visible].className = "hidden";
+        parts[visible+1].className = "disc row";
+        break;
+    case 7:
+        theories1();
+        break;
+    default:
+        console.log("default");
+  }
 }
+
+
+function right(){
+  // check which one is visible (Based on class)
+    // loop through all of the classes and return the visible class
+    // if th1 = visible, clicking right will disable the right button
+      // make all hidden
+      // make i+1 not hidden (disc col)
+    // else
+      // if art2, next class will be disc th-1
+      // if art1 || th1, next class will be "disc row"
+        // 
+      // else
+        // make all hidden
+        // make i+1 not hidden
+
+  console.log("right clicked"); 
+
+  checkVisible();
+  switch (visible) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+        parts[visible].className = "hidden";
+        parts[visible+1].className = "disc col";
+        if (visible === 1) {
+          colonial1();
+        }
+        else if (visible === 3) {
+          artifacts1();
+        }
+        break;
+    case 5:
+        theories1();
+        break;
+    case 4:
+    case 6:
+        parts[visible].className = "hidden";
+        parts[visible+1].className = "disc row";
+        break;
+    default:
+        console.log("default");
+  }
+
+
+    // if (visible === (4 || 6)) {
+    //   parts[visible].className = "hidden";
+    //   parts[visible+1].className = "disc row";
+
+    //   if (visible === 6) {
+    //       theories();
+    //   }
+
+    //   //disable right button after making 7th div visible
+    //   //https://www.webdesignerforum.co.uk/topic/44218-remove-onclick-event-with-javascript/
+    // }
+    // else {
+    //   if (visible === 1) {
+    //     colonial1();
+    //   }
+    //   else if (visible === 3) {
+    //     artifacts1();
+    //   }
+    //   else if (visible === 5) {
+    //       parts[visible].className = "hidden";
+    //       parts[visible+1].className = "disc th-1";
+    //   }
+    //   else {
+    //       parts[visible].className = "hidden";
+    //       parts[visible+1].className = "disc col";
+    //   }
+    // }
+    // else {
+    //   if (visible === 5) {
+    //     // next class will be disc th-1
+    //   }
+    //   else {
+    //     parts[visible].className = "hidden";
+    //     parts[visible+1].className = "disc col";
+    //   }
+    // }
+    //   parts[visible].className = "hidden";
+    //   parts[visible+1].className = "disc col";
+
+    //   if (visible === 2) {
+    //       colonial1();
+    //   }
+    //   else if (visible === 4) {
+    //       artifacts1();
+    //   }
+    //   else if (visible === 6) {
+    //       theories();
+    //   }
+    //   else {
+    //   }
+}
+
+
+// IF visible = 1, trigger colonial1();
+
+

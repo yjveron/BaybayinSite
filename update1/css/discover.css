@@ -121,7 +121,7 @@
 
 }
 
-#artefact-2 .image-row {
+#artifacts-2 .image-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -150,7 +150,7 @@
   height: 340px;
 }
 
-#artefact-2 .image-container {
+#artifacts-2 .image-container {
   height: 320px;
   width: 320px;
 }
