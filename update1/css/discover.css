@@ -1,6 +1,4 @@
-/*TIMELINE STILL UNDER DEV'T*/ 
-
-/*Di rin kasi ako sure if I should use li for it, kasi inaaral ko pa yung javascript implementation :( */
+/*TIMELINE CONTAINER*/ 
 
 .timeline {
   height: 10em;
@@ -11,60 +9,7 @@
 /*  background-color: lightgray;*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.timeline ol li {
-  display: inline-block;
-  height: 14px;
-  width: 14px;
-  margin: 0 3em;
-  border: 2px solid black;
-  border-radius: 50%;
-  position: relative;
-}
-
-.timeline ol li:after {
-  display: block;
-  height: 1px;
-  content:'';
-  background-color: black;
-  position: relative;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-*/
-/*.timeline .line {
-  height: 0px;
-  width: 38px;
-  border: 1px dotted black;
-  position: relative;
-  top: -13px;
-  left: 14px;
-}
-*/
-/*.timeline .link {
-  position: relative;
-  top: 35px;
-  left: -35px;
-}*/
-
-/*CONTAINER DONE, TO INTEGRATE WITH OTHERS*/
+/*CONTAINER*/
 
 .container {
   display: flex;
@@ -211,7 +156,13 @@
   font-size: 4em;
   cursor: pointer;
   color: #f69e36;
+
 /*  background-color: white; */
+}
+
+.arrow-inactive {
+  color: #ffc889 !important;
+  cursor: default;
 }
 
 .arrow i{
@@ -226,3 +177,5 @@
 .arrow:active {
   color: #23879f;
 }
+
+/*color: #f7bf7e;*/
