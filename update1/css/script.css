@@ -175,6 +175,9 @@ p a:hover {
 
 .circle p{
   margin-left: 2em;
+  font-family: Source;
+  display: inline-block;
+  margin-top: 0;
 }
 
 .line {
