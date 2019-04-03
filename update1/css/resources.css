@@ -2,10 +2,15 @@
   margin: 4em 4em 3em 9em;
 }
 
+.main h2{
+	color: #722730
+}
+
 .main p{
-  margin-top: 1em;
-  margin-left: 4em;
-  font-family: Source;
+	margin-left: 4em;
+	margin-right: 5em;
+	justify-content: left;
+	font-family: Source;
 }
 
 .main li{

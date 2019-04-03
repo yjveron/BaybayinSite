@@ -46,9 +46,9 @@ body{
 }
 .title h1{
   color: #182249;
-  font-size: 3em;
+  font-size: 6em;
   margin:0;
-  padding: 15vh 0 3vh 0;
+  padding: 15vh 0 0 0;
 }
 /*
 .title h1:hover{
@@ -58,6 +58,9 @@ body{
 .title p{
   color: #722730;
   margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+
 }
 .button {
   margin: 7em 0 0 0;
