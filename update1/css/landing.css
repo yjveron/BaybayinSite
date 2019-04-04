@@ -1,4 +1,5 @@
 body{
+  /*
     height: 100%;
     width: 100%;
     background: url(../images/L_BANNER.png) no-repeat center center fixed; 
@@ -6,6 +7,9 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    */
+    background: url(../images/L_PLS.png);
+    background-size: 1920px 970px;
 }
 
 .navbar {
@@ -58,7 +62,7 @@ body{
 .title p{
   color: #722730;
   margin: 0;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 
 }
@@ -71,7 +75,7 @@ body{
 .button a{
   text-decoration: none;
   background-color: #f2b370;
-  padding: 0.6em;
+  padding: 2em 3em 2em 3em;
   color: #122f6d;
   border-radius: 9px
 }
@@ -84,6 +88,7 @@ body{
 .button li{
   display: inline-block;
   margin: 9.5vh;
+  font-size: 20px;
 
 }
 .button a:hover {

@@ -9,6 +9,7 @@
 .main p{
 	margin-left: 4em;
 	margin-right: 5em;
+	padding-right: 10em;
 	justify-content: left;
 	font-family: Source;
 }
