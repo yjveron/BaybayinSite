@@ -20,6 +20,7 @@ body{
   display: unset;
   margin-left: unset;
   height: unset;
+  position: unset;
 }
 
 .navbar a {

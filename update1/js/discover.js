@@ -43,6 +43,7 @@ function precolonial1() {
   }
 
   leftarrow.className = "arrow arrow-inactive arrow-left";
+  rightarrow.className = "arrow arrow-right";
   visible = 0;
 }
 
@@ -63,6 +64,8 @@ function colonial1() {
     }
   }
 
+  leftarrow.className = "arrow arrow-left";
+  rightarrow.className = "arrow arrow-right";
   visible = 2;
 }
 
@@ -83,6 +86,8 @@ function artifacts1() {
     }
   }
 
+  leftarrow.className = "arrow arrow-left";
+  rightarrow.className = "arrow arrow-right";
   visible = 4;
 }
 
@@ -103,8 +108,8 @@ function theories1() {
     }
   }
 
+  leftarrow.className = "arrow arrow-left";
   rightarrow.className = "arrow arrow-inactive arrow-right";
-  visible = 0;
   visible = 6;
 }
 
