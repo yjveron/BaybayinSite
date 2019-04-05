@@ -33,7 +33,6 @@ p a:hover {
 }
 .button p a{
   margin-left:500px;
-  top: 80%
 }
 
 #header{
@@ -52,6 +51,12 @@ p a:hover {
   height: 400px;
   margin-bottom: 7em;
 }
+#imglast{
+  padding-left: 180px;
+  height: 1300px;
+  margin-bottom: 7em;
+}
+
 
 #img2 img{
   width: 600px;
@@ -80,7 +85,9 @@ p a:hover {
   display: flex;
   margin-left: 11em;
   flex-direction: row;
-  
+}
+.last{
+  margin-left: 750px;
 }
     
 .content{
@@ -211,3 +218,4 @@ p a:hover {
   z-index: 0;
   left: 11px;
 }
+
