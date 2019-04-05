@@ -80,8 +80,8 @@
 
 .col .image-container {
   /* both divided by 1.8 */
-  height: 373px; /* 7 in or 672 px */
-  width: 245px; /* 4.6 in or 432 px */
+  height: 746px; /* 7 in or 672 px | 373 px before */ 
+  width: 490px; /* 4.6 in or 432 px | 245 px before*/
 } 
 
 .row .image-container {
@@ -90,18 +90,20 @@
 
 .th-1 .image-container {
   /* both divided by 1.8 */
-  height: 384px; /* 7.2 in or 691.2 px */
-  width: 320px; /* 6 in or 576 px */
+  height: 768px; /* 7.2 in or 691.2 px | 384 px before */
+  width: 640px; /* 6 in or 576 px | 320 px before */
 }
 
 #theories-2 .image-container {
   /*figured out*/
-  height: 340px;
+  /*height: 680px;*/ /* 340 before */
+  height: 450px;
+  width: 1200px;
 }
 
 #artifacts-2 .image-container {
-  height: 320px;
-  width: 320px;
+  height: 640px; /* 320 px before */
+  width: 640px; /* 320 px before */
 }
 
 .img {
@@ -121,6 +123,7 @@
   height: 100%;
   width: 100%;
   margin: 0;
+  font-size: 20px;
 /*  background-color: white;*/
 }
 
@@ -143,11 +146,11 @@
 .text h1 {
   margin-top: 0;
   margin-bottom: 1em;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .text h2 {
-  font-size: 30px;
+  font-size: 50px;
   color: #722730;
 }
 
