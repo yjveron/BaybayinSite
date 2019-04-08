@@ -102,8 +102,8 @@
 }
 
 #artifacts-2 .image-container {
-  height: 640px; /* 320 px before */
-  width: 640px; /* 320 px before */
+  height: 480px; /* 320 px before */
+  width: 480px; /* 320 px before */
 }
 
 .img {

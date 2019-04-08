@@ -109,7 +109,7 @@ function theories1() {
   }
 
   leftarrow.className = "arrow arrow-left";
-  rightarrow.className = "arrow arrow-inactive arrow-right";
+  rightarrow.className = "arrow arrow-right";
   visible = 6;
 }
 
@@ -208,7 +208,9 @@ function right(){
     case 6:
         parts[visible].className = "hidden";
         parts[visible+1].className = "disc row";
-        rightarrow.className = "arrow arrow-inactive arrow-right";
+        if (visible === 6) {
+          rightarrow.className = "arrow arrow-inactive arrow-right";
+        }
         break;
     default:
         console.log("default");
