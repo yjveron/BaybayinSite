@@ -56,7 +56,7 @@
 /*   background-color: blue; */
 }
 
-.col .image-column & .th-1 .image-column {
+.col .image-column + .th-1 .image-column {
   width: 400px;
 }
 
