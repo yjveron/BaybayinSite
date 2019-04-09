@@ -155,6 +155,8 @@ function left() {
         // FROM ARTIFACTS 1, ADD 1 TO GO TO ARTIFACTS 2
         parts[visible].className = "hidden";
         parts[visible+1].className = "disc row";
+        rightarrow.className = "arrow arrow-right arrow-art2";
+        leftarrow.className = "arrow arrow-left arrow-art2";
         break;
     case 7:
         theories1();
@@ -210,6 +212,10 @@ function right(){
         parts[visible+1].className = "disc row";
         if (visible === 6) {
           rightarrow.className = "arrow arrow-inactive arrow-right";
+        }
+        else {
+          rightarrow.className = "arrow arrow-right arrow-art2";
+          leftarrow.className = "arrow arrow-left arrow-art2";
         }
         break;
     default:

@@ -60,12 +60,6 @@
   width: 400px;
 }
 
-.image-row {
-/*  background-color: blue;*/
-  padding: 0 0 0 50px;
-
-}
-
 #artifacts-2 .image-row {
   display: flex;
   flex-direction: row;
@@ -133,7 +127,6 @@
 }
 
 .row .text p{
-  padding: 0 60px;
   font-size: 20px;
 }
 
@@ -186,6 +179,10 @@
 
 .arrow:active {
   color: #23879f;
+}
+
+.arrow-art2 {
+  margin: 0 50px;
 }
 
 /*color: #f7bf7e;*/
